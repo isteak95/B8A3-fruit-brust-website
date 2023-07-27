@@ -60,11 +60,12 @@
       <div class="form-control ">
         <input type="text" placeholder="Search here"
           class="hidden relative sm:block input input-bordered rounded-3xl border-none lg:w-96 md:w-auto" />
-        <img class="absolute mt-3 ml-72" src="./images/Frame (3).png" alt="">
+        <img class="absolute hidden sm:block mt-3 ml-72" src="./images/Frame (3).png" alt="">
       </div>
     </div>
     <!-- nav bar end -->
-    <div class="carousel relative lg:w-full lg:mt-14 w-[385px] ml-8 lg:ml-auto">
+    <!-- carousel start -->
+    <div class="carousel relative lg:w-full lg:mt-14 w-[385px]  lg:ml-auto ml-5">
       <div id="slide1" class="carousel-item relative w-full">
         <img src="./images/banner1.png" class="w-full" />
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -94,12 +95,12 @@
         </div>
       </div>
     </div>
-    <div class="absolute -mt-[500px] text-center lg:ml-96">
-      <h1 class="font-bold text-white lg:text-7xl ">Exotic tastes at your <br>doorstep</h1>
-      <p class="mt-7 text-2xl text-white mb-16">We supply highly quality organic products</p>
-      <button class="w-36 h-12 rounded-lg bg-[#F85559] text-white text-sm">Shop Now</button>
+    <div class="absolute lg:-mt-[500px]  justify-center text-center lg:ml-96 ml-28 -mt-40">
+      <h1 class="font-bold text-white lg:text-7xl  ">Exotic tastes at your <br>doorstep</h1>
+      <p class="lg:mt-7 lg:text-2xl text-sm text-white lg:mb-16">We supply highly quality organic <br>  products</p>
+      <button class="lg:w-36 lg:h-12 w-28 h-8 mt-2 rounded-lg bg-[#F85559] text-white text-sm">Shop Now</button>
     </div>
-    <div class="hidden sm:block">
+    <div class="hidden md:block sm:block">
       <div
         class="flex relative  bg-[#FFF] justify-center items-center rounded-lg shadow-xl box gap-36 mx-20 -mt-28 h-64">
         <div>
@@ -123,22 +124,20 @@
           <p class="text-center pt-3">Mango</p>
         </div>
       </div>
-
     </div>
-
-
+    <!-- carousel end  -->
   </header>
   <main class="container md:mx-auto">
     <!-- deal of the day -->
     <section>
-      <div class="flex gap-40 justify-center mt-36">
+      <div class="lg:flex gap-40 justify-center text-center lg:mt-36">
         <div class=" ">
-          <h1 class="text-bold text-4xl mb-5">Deal of the day</h1>
-          <p>Contrary to popular belief, is not simply random text. It has roots in a
+          <h1 class="text-bold lg:text-4xl text-2xl mt-4 mb-5">Deal of the day</h1>
+          <p class="mx-7 lg:mx-auto">Contrary to popular belief, is not simply random text. It has roots in a
             piece of classical Latin <br> literature from 45 BC, making it over 2000 years old.</p>
         </div>
         <div>
-          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max ml-3 lg:ml-auto w-64 lg:w-auto">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span style="--value:29;"></span>
@@ -175,8 +174,11 @@
           </div>
         </div>
       </div>
-      <div class="mt-12 flex gap-6">
-        <div class="card w-96 lg:h-[520px] bg-base-100 shadow-xl">
+      <!-- end  -->
+      <!-- start -->
+      <div class="mt-12 lg:flex lg:flex-row lg:gap-10 flex flex-col gap-40 ml-6 lg:ml-auto">
+           <!-- card 1 -->
+        <div class="card w-96 lg:h-[520px] bg-base-100 shadow-2xl">
           <figure><img class="pt-14" src="./images/fruit6.png" alt="Shoes" /></figure>
           <div class="card-body ">
             <h2 class="text-2xl text-center mb-3">12.90$ - 18.85$</h2>
@@ -213,7 +215,8 @@
             </dialog>
           </div>
         </div>
-        <div class="card w-96 lg:h-[520px] bg-base-100 shadow-xl">
+        <!-- card 2 -->
+        <div class="card w-96 lg:h-[520px] bg-base-100 shadow-2xl">
           <figure><img class="pt-14" src="./images/fruit7.png" alt="Shoes" /></figure>
           <div class="card-body ">
             <h2 class="text-2xl text-center mb-3">12.90$ - 18.85$</h2>
@@ -250,7 +253,8 @@
             </dialog>
           </div>
         </div>
-        <div class="card w-96 lg:h-[520px] bg-base-100 shadow-xl">
+           <!-- card 3 -->
+        <div class="card w-96 lg:h-[520px] bg-base-100 shadow-2xl">
           <figure><img class="pt-14" src="./images/fruit8.png" alt="Shoes" /></figure>
           <div class="card-body ">
             <h2 class="text-2xl text-center mb-3">12.90$ - 18.85$</h2>
@@ -287,7 +291,8 @@
             </dialog>
           </div>
         </div>
-        <div class="card w-96 lg:h-[520px] bg-base-100 shadow-xl">
+           <!-- card 4 -->
+        <div class="card w-96 lg:h-[520px] bg-base-100 shadow-2xl">
           <figure><img class="pt-14" src="./images/fruit9.png" alt="Shoes" /></figure>
           <div class="card-body ">
             <h2 class="text-2xl text-center mb-3">12.90$ - 18.85$</h2>
@@ -325,20 +330,23 @@
           </div>
         </div>
       </div>
+      <div class="text-center ">
+        <button class="bg-[#F85559] rounded-xl text-bold text-white w-28 h-12 mt-14">Shop All</button>
+      </div>
     </section>
-    <!-- meat the team  -->
+    <!-- meat the team start -->
     <section>
-      <div class="mt-36 ml-12 relative h-[1340px] lg:h-auto">
+      <div class="mt-36 lg:ml-12 relative h-[1340px] lg:h-auto w-">
         <img class="h-[1350px] lg:h-auto" src="./images/team.png" alt="">
       </div>
-      <div class="relative -mt-[520px]">
+      <div class="relative lg:-mt-[520px] -mt-[1280px]">
         <h1 class="text-center text-5xl text-bold text-white">Meet the team section</h1>
         <p class="text-center mt-6 mb-11 text-white">Contrary to popular belief, is not simply random text. It has roots
           in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.
         </p>
-        <div class="lg:flex flex-row justify-center  gap-40">
+        <div class="lg:flex flex-row justify-center items-center gap-40">
           <div>
-            <img src="./images/member1.png" alt="">
+            <img class="ml-36 lg:ml-auto" src="./images/member1.png" alt="">
             <p class="text-center mt-8 text-white">Awlad Hossain</p>
             <p class="text-center text-white my-2">Fruits Expert</p>
             <div class="flex justify-center gap-3">
@@ -348,7 +356,7 @@
             </div>
           </div>
           <div>
-            <img src="./images/member2.png" alt="">
+            <img class="ml-36 lg:ml-auto" src="./images/member2.png" alt="">
             <h1 class="text-white text-center mt-8">Safia Chowdhury</h1>
             <p class="text-center text-white my-2">Fruits Expert</p>
             <div class="flex justify-center gap-3">
@@ -358,7 +366,7 @@
             </div>
           </div>
           <div>
-            <img src="./images/member3.png" alt="">
+            <img class="ml-36 lg:ml-auto" src="./images/member3.png" alt="">
             <p class="text-center text-white mt-8">Rokib Hossain</p>
             <p class="text-center text-white my-2">Fruits Expert</p>
             <div class="flex justify-center gap-3">
@@ -368,7 +376,7 @@
             </div>
           </div>
           <div>
-            <img src="./images/member4.png" alt="">
+            <img class="ml-36 lg:ml-auto" src="./images/member4.png" alt="">
             <p class="text-center text-white mt-8">Chaity</p>
             <p class="text-center text-white my-2">Fruits Expert</p>
             <div class="flex justify-center gap-3">
@@ -379,21 +387,23 @@
           </div>
         </div>
       </div>
-      <section>
+      <!-- end  -->
+      <section class="">
         <!-- hhshshcsj -->
         <!-- choose us section  -->
 
-        <h1 class="mt-64 mb-3 text-5xl text-bold text-center">Why Choose Us</h1>
+        <h1 class="lg:mt-64 mt-20 mb-3 lg:text-5xl text-3xl text-bold text-center">Why Choose Us</h1>
         <p class="text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of
           classical
           <br> Latin literature from 45 BC, making it over 2000 years old.
         </p>
+        <!-- ......... -->
         <div>
-          <div class="grid gap-10 lg:grid-cols-3 grid-cols-1 mb-36 mt-11">
+          <div class="grid gap-10 lg:grid-cols-3 grid-cols-1 mb-36 mt-11 mx-14 lg:mx-auto">
             <div class="flex gap-3">
               <div>
-                <img class="relative" src="./images/Ellipse 2.png" alt="">
-                <img class="-mt-9 ml-3 w-6 relative " src="./images/group 1.png" alt="">
+                <img class="relative " src="./images/Ellipse 2.png" alt="">
+                <img class="lg:-mt-9 lg:ml-3 -mt-6 ml-2 w-4  lg:w-6 relative " src="./images/group 1.png" alt="">
               </div>
               <div>
                 <h1 class="text-3xl">Dedicated Team</h1>
@@ -403,17 +413,17 @@
                 </p>
               </div>
             </div>
-            <div class="lg:row-span-3">
-              <img src="./images/whychoose1.png" alt="">
+            <div class="lg:row-span-3 ">
+              <img class="lg:ml-auto h-60 w-[320px] lg:h-auto lg:w-auto" src="./images/whychoose1.png" alt="">
             </div>
-            <div class="flex flex-row-reverse gap-3">
+            <div class="flex lg:flex-row-reverse gap-3">
               <div>
-                <img class="relative" src="./images/Ellipse 2.png" alt="">
-                <img class="-mt-9 ml-3 w-6 relative" src="./images/fruit 1.png" alt="">
+                <img class="relative " src="./images/Ellipse 2.png" alt="">
+                <img class="lg:-mt-9 lg:ml-3 -mt-6 ml-2 w-4  lg:w-6 relative" src="./images/fruit 1.png" alt="">
               </div>
-              <div class="text-right">
+              <div class=" lg:text-right">
                 <h1 class="text-3xl ">Integrated Supplier</h1>
-                <hr class="w-24 h-1 ml-[330px]">
+                <hr class="w-24 h-1 lg:ml-[330px]">
                 <p class="text-[16px]">Professional employees are there for you to pick the most amazing and fresh
                   fruits.
                 </p>
@@ -422,7 +432,7 @@
             <div class="flex gap-3">
               <div>
                 <img class="relative" src="./images/Ellipse 2.png" alt="">
-                <img class="-mt-9 ml-3 w-6 relative" src="./images/love 1.png" alt="">
+                <img class="lg:-mt-9 lg:ml-3 -mt-6 ml-2 w-4  lg:w-6 relative" src="./images/love 1.png" alt="">
               </div>
               <div>
                 <h1 class="text-3xl">Fresh is Best</h1>
@@ -432,23 +442,23 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-row-reverse gap-3">
+            <div class="flex lg:flex-row-reverse gap-3 mr-16 lg:mr-auto">
               <div>
                 <img class="relative" src="./images/Ellipse 2.png" alt="">
-                <img class="-mt-9 ml-3 w-6 relative  " src="./images/ice-cream 1.png" alt="">
+                <img class="lg:-mt-9 lg:ml-3 -mt-5 ml-1 w-4  lg:w-6 relative" src="./images/ice-cream 1.png" alt="">
               </div>
-              <div class="text-right">
-                <h1 class="text-3xl">Sustainable Practice</h1>
-                <hr class="w-24 h-1 ml-[330px]">
+              <div class="lg:text-right">
+                <h1 class="text-bold text-3xl ">Sustainable Practice</h1>
+                <hr class="w-24 h-1 ld:ml-[330px]">
                 <p class="text-[16px]">Professional employees are there for you to pick the most amazing and fresh
                   fruits.
                 </p>
               </div>
             </div>
-            <div class="flex gap-3">
+            <div class="flex gap-3 ">
               <div>
                 <img class="relative" src="./images/Ellipse 2.png" alt="">
-                <img class="-mt-9 ml-3 w-6 relative " src="./images/gift-box 1.png" alt="">
+                <img class="lg:-mt-9 lg:ml-3 -mt-6 ml-2 w-4  lg:w-6 relative " src="./images/gift-box 1.png" alt="">
               </div>
               <div>
                 <h1 class="text-3xl">Gift Certificates</h1>
@@ -458,14 +468,14 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-row-reverse gap-3">
+            <div class="flex lg:flex-row-reverse gap-3">
               <div>
                 <img class="relative" src="./images/Ellipse 2.png" alt="">
-                <img class="-mt-9 ml-3 w-6 relative " src="./images/like 1.png" alt="">
+                <img class="lg:-mt-9 lg:ml-3 -mt-6 ml-2 w-4  lg:w-6 relative " src="./images/like 1.png" alt="">
               </div>
-              <div class="text-right">
+              <div class="lg:text-right">
                 <h1 class="text-3xl">Dedicated Team</h1>
-                <hr class="w-24 h-1 ml-[330px]">
+                <hr class="w-24 h-1 lg:ml-[330px]">
                 <p class="text-[16px]">Professional employees are there for you to pick the most amazing and fresh
                   fruits.
                 </p>
